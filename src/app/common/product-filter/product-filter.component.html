@@ -1,0 +1,84 @@
+<!-- <div class="card">
+    <div class="card-header">
+        <h4 class="mt-4">Product Search</h4>
+    </div>
+    <div class="card-body">
+        <div class="container-fluid bg-light ">
+            <div class="row align-items-center justify-content-center">
+                <div class="col-md-2 pt-3">
+                    <div class="form-group ">
+                        <select id="inputState " [(ngModel)]="selectedProduct" (ngModelChange)="onProductSelect($event)"
+                            class="form-control">
+                            <option *ngFor="let product of products" [value]="product.id" selected>{{product.title}}
+                            </option>
+                        </select>
+                    </div>
+                </div>
+                <br>
+                <p>Selected Product id is :: {{selectedProduct}}</p>
+                <br>
+                <br>
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th scope="col">#</th>
+                            <th scope="col">ID</th>
+                            <th scope="col">Title</th>
+                            <th scope="col">Description</th>
+                            <th scope="col">Unit</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr *ngFor="let product of filterData">
+                            <th scope="row">1</th>
+                            <td>{{product.id}}</td>
+                            <td>{{product.title}}</td>
+                            <td>{{product.description}}</td>
+                            <td>{{product.unit}}</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+<br>
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-9" *ngFor="let product of products">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="card mb-1">
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <img
+                                        src="https://previews-themeforest.imgix.net/files/112138384/590x300.jpg?auto=compress%2Cformat&fit=crop&crop=top&w=590&h=300&s=bb6b8b5332dac7c4dd5ab59181d940b9">
+                                    <p class="card-text"><small class="text-muted">Tags: Second Hand, Honda, SUV,
+                                            Delhi</small></p>
+                                </div>
+                                <div class="col-md-5 border-right">
+                                    <h5 class="text-danger">{{product.title | titlecase}}</h5>
+                                    <a href="#" class="badge badge-secondary">{{product.type}}/ Automobiles</a>
+                                    <p class="card-text">{{product.description}}</p>
+                                    <p class="card-text"><small class="text-muted">{{product.unit}}</small></p>
+                                </div>
+                                <div class="col-md-3">
+                                    <h5>Rs. 45000</h5>
+                                    <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i
+                                        class="fa fa-star"></i>
+                                    <small>Last updated: 10 Nov 15</small>
+                                    <p>Total Visits: 91</p>
+                                    <button type="button"
+                                        class="btn btn-outline-secondary rounded-0 mb-1">PREVIEW</button>
+                                    <button type="button" class="btn btn-outline-secondary rounded-0 mb-1">Save</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div> -->

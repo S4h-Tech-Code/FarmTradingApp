@@ -1,0 +1,40 @@
+.ip {
+    font-size: .8rem;
+    /* border-radius: 10rem; */
+    padding: 1.8rem 15rem;
+}
+.card {
+    width: -webkit-fill-available; 
+
+}
+.fsize {
+    font-size: 0.75rem;
+}
+.form-control-lg {
+    font-size: 0.75rem;
+   
+}
+.toggleAlign{
+    display: inline-flex;
+    justify-content: center;
+    margin: auto;
+}
+.organicAlign{
+    padding-right: 18px;
+}
+
+
+@media(min-width:768px){
+    .card {
+        width: -webkit-fill-available;
+        margin-left: 120px;
+        margin-right: 120px;
+    }
+    .fsize {
+        font-size: 1.25rem;
+    }
+    .form-control-lg {
+        font-size: 1.25rem;
+       
+    }
+}
