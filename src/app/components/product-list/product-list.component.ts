@@ -26,11 +26,5 @@ export class ProductListComponent implements OnInit {
       }
     );
   }
-  onReviewOffer(){
-   this.router.navigateByUrl('/offer-full-details');
-  }
-  onEdit(){
-    this.router.navigateByUrl('/post');
-  }
-
+ 
 }

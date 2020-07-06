@@ -1,1 +1,247 @@
-<p>responses works!</p>
+<nav class="navbar navbar-expand navbar-light bg-white topbar mb-4 static-top shadow">
+
+    <!-- Sidebar Toggle (Topbar) -->
+    <!-- <button id="sidebarToggleTop" class="btn btn-link d-md-none rounded-circle mr-3">
+      <i class="fa fa-bars"></i>
+    </button> -->
+  
+    <!-- Topbar Search -->
+    <form class="d-none d-sm-inline-block form-inline mr-auto ml-md-3 my-2 my-md-0 mw-100 navbar-search">
+      <div class="input-group">
+        <input type="text" class="form-control bg-light border-0 small" placeholder="Search for..." aria-label="Search"
+        name="search" [(ngModel)]="searchText" autocomplete="off" aria-describedby="basic-addon2">
+        <div class="input-group-append">
+          <button class="btn btn-primary" type="button">
+            <i class="fas fa-search fa-sm"></i>
+          </button>
+        </div>
+      </div>
+    </form>
+  
+    <!-- Topbar Navbar -->
+    <ul class="navbar-nav ml-auto">
+  
+      <!-- Nav Item - Search Dropdown (Visible Only XS) -->
+      <li class="nav-item dropdown no-arrow d-sm-none">
+        <a class="nav-link dropdown-toggle" href="#" id="searchDropdown" role="button" data-toggle="dropdown"
+          aria-haspopup="true" aria-expanded="false">
+          <i class="fas fa-search fa-fw"></i>
+        </a>
+        <!-- Dropdown - Messages -->
+        <div class="dropdown-menu dropdown-menu-right p-3 shadow animated--grow-in" aria-labelledby="searchDropdown">
+          <form class="form-inline mr-auto w-100 navbar-search">
+            <div class="input-group">
+              <input type="text" class="form-control bg-light border-0 small" placeholder="Search for..."
+                aria-label="Search" aria-describedby="basic-addon2">
+              <div class="input-group-append">
+                <button class="btn btn-primary" type="button">
+                  <i class="fas fa-search fa-sm"></i>
+                </button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </li>
+  
+      <!-- Nav Item - Alerts -->
+      <li class="nav-item dropdown no-arrow">
+        <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button" data-toggle="dropdown"
+          aria-haspopup="true" aria-expanded="false">
+          <h4 type="text">Filters<i class="fa fa-filter"></i></h4>
+        </a>
+        <!-- Dropdown - User Information -->
+        <div class="dropdown-menu dropdown-menu-right shadow animated--grow-in" aria-labelledby="userDropdown">
+          <a class="dropdown-item" href="#">
+            <i class="fas fa-hand-holding-heart fa-sm fa-fw mr-2 text-gray-400"></i>
+            Food Grains
+          </a>
+          <a class="dropdown-item" href="#">
+            <i class="fas fa-seedling fa-sm fa-fw mr-2 text-gray-400"></i>
+            Oil Seeds
+          </a>
+          <a class="dropdown-item" href="#">
+            <i class="fas fa-apple-alt fa-sm fa-fw mr-2 text-gray-400"></i>
+            Fruits
+          </a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="#" data-toggle="modal" data-target="#logoutModal">
+            <i class="fas fa-carrot fa-sm fa-fw mr-2 text-gray-400"></i>
+            Vegetables
+          </a>
+          <a class="dropdown-item" href="#">
+            <i class="far fa-lemon fa-sm fa-fw mr-2 text-gray-400"></i>
+            Lentils
+          </a>
+          <a class="dropdown-item" href="#">
+            <i class="fas fa-pepper-hot fa-sm fa-fw mr-2 text-gray-400"></i>
+            Spices
+          </a>
+        </div>
+      </li>
+      <div class="topbar-divider d-none d-sm-block"></div>
+  
+      <!-- Nav Item - User Information -->
+      <li class="nav-item dropdown no-arrow">
+        <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button" data-toggle="dropdown"
+          aria-haspopup="true" aria-expanded="false">
+          <h4 type="text">Catergories<i class="fa fa-filter"></i></h4>
+        </a>
+        <!-- Dropdown - User Information -->
+        <div class="dropdown-menu dropdown-menu-right shadow animated--grow-in" aria-labelledby="userDropdown">
+          <a class="dropdown-item" href="#">
+            <i class="fas fa-hand-holding-heart fa-sm fa-fw mr-2 text-gray-400"></i>
+            Food Grains
+          </a>
+          <a class="dropdown-item" href="#">
+            <i class="fas fa-seedling fa-sm fa-fw mr-2 text-gray-400"></i>
+            Oil Seeds
+          </a>
+          <a class="dropdown-item" href="#">
+            <i class="fas fa-apple-alt fa-sm fa-fw mr-2 text-gray-400"></i>
+            Fruits
+          </a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="#" data-toggle="modal" data-target="#logoutModal">
+            <i class="fas fa-carrot fa-sm fa-fw mr-2 text-gray-400"></i>
+            Vegetables
+          </a>
+          <a class="dropdown-item" href="#">
+            <i class="far fa-lemon fa-sm fa-fw mr-2 text-gray-400"></i>
+            Lentils
+          </a>
+          <a class="dropdown-item" href="#">
+            <i class="fas fa-pepper-hot fa-sm fa-fw mr-2 text-gray-400"></i>
+            Spices
+          </a>
+        </div>
+      </li>
+  
+    </ul>
+  
+  </nav>
+  
+  <div class="container mb-4">
+     <div _ngcontent-jey-c5="" class="d-sm-flex align-items-center justify-content-between">
+        <h4 _ngcontent-jey-c5="" class="mb-0 text-gray-800">Mangoes Lot Id:AP123</h4>
+        <h4 _ngcontent-jey-c5="" class="mb-0 text-gray-800">Posting Date:22 June 2020</h4>
+        <button _ngcontent-jey-c5="" class="d-sm-inline-block btn btn-sm btn-primary shadow-sm" (click)="onEdit()">
+          <i _ngcontent-jey-c5="" class="fas fa-edit fa-sm text-white-50"></i> Edit</button>
+      </div>
+   
+    <div class="row">
+      <div class="col-12">
+        <div class="table-responsive">
+          <!-- <table class="table card-table">
+            <thead>
+              <tr>
+                <th scope="col"> </th>
+                <th scope="col">Product</th>
+                <th scope="col">Available</th>
+                <th scope="col" class="text-center">Quantity</th>
+                <th scope="col" class="text-right">Price</th>
+                <th> </th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr *ngFor="let product of productList | filter:searchText">
+                <td><img src="https://dummyimage.com/50x50/55595c/fff" /> </td>
+                <td>
+                  <h5>{{product.name}}</h5>
+                  <p>{{product.description}}</p>
+                </td>
+                <td>In stock</td>
+                <td>{{product.quantity}}</td>
+                <td class="text-right">{{product.price | currency}}</td>
+                <td class="text-right"><button class="btn btn-sm btn-danger"><i class="fa fa-plus"></i> </button> </td>
+              </tr>
+            </tbody>
+          </table> -->
+          <div class="card mt-5 border-5 pt-2 active pb-0 px-3 shadow-sm p-3 mb-5 bg-white rounded"
+            *ngFor="let product of productList | filter:searchText">
+            <div class="card-body">
+              <div class="row">
+                <div class="col-md-12">
+                  <div class="bg-white p-3 rounded mt-2">
+                    <div class="row">
+                      <div class="col-md-9">
+                        <h4 class="card-title"><b>{{product.name}}</b></h4>
+                        <div class="row px-3">
+                          <p class="mb-1">
+                            <span class="badge badge-warning">offer</span>
+                          </p>
+                          <p class="mb-1">
+                            <span class="fas fa-hourglass-start ml-4"> Available</span>
+                          </p>
+                        </div>
+                        <div class="row px-3">
+                          <p><span class="fa fa-map-marker"> Guntur - Andhra Pradesh IND</span></p>
+                        </div>
+                        <hr>
+                        <div class="row">
+                          <div class="col">
+                            <p>Price</p>
+                          </div>
+                          <div class="col">
+                            <p>Quantity</p>
+                          </div>
+                          <div class="col">
+                            <p>Organic</p>
+                          </div>
+                        </div>
+                        <div class="row">
+                          <div class="col">
+                            <p><span class="fas fa-rupee-sign"> {{product.price}} / Ton</span></p>
+                          </div>
+                          <div class="col">
+                            <p><span class="fas fa-dolly"> {{product.quantity}}</span></p>
+                          </div>
+                          <div class="col">
+                            <p><span class="fas fa-seedling"> Yes</span></p>
+                          </div>
+                        </div>
+                        <!-- <div class="row">
+                          <div class="col-sm">
+                            <p><span class="fas fa-rupee-sign"> {{product.price}} / Ton</span></p>
+                          </div>
+                          <div class="col-sm">
+                            <p><span class="fas fa-dolly"> Qantity - {{product.quantity}}</span></p>
+                          </div>
+                          <div class="col-sm">
+                            <p><span class="fas fa-seedling"> Organic</span></p>
+                          </div>
+                        </div> -->
+                        <hr>
+                      </div>
+                      <div class="d-flex col-md-3">
+                        <div class="d-flex flex-column justify-content-start user-profile w-100">
+                          <div class="d-flex user"><img class="rounded-circle" src="https://i.imgur.com/6dOWqJu.jpg"
+                              width="50">
+                            <div class="about ml-1"><span
+                                class="d-block text-black font-weight-bold">Ravi</span><span>Farm
+                                consultant</span></div>
+                          </div>
+                          <div class="progresses">
+                            <div class="stars"><i class="fa fa-star"></i><i class="fa fa-star"></i><i
+                                class="fa fa-star"></i><i class="fa fa-star"></i><span
+                                class="mr-2 text-black-50 number-ratings">(4.5 ratings)</span></div>
+                          </div>
+                          <div class="progresses">
+                            <div class="mt-1">
+                              <span>Posted </span>
+                              <span class="far fa-calendar-alt"> 01 June</span>
+                            </div>
+                          </div>
+                          <br>
+                          <button type="button" class="btn btn-outline-primary" (click)="onReviewOffer()">Review Offer</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
