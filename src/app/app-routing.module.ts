@@ -11,6 +11,7 @@ import { ResetPasswordComponent } from './auth/components/reset-password/reset-p
 import { PostComponent } from './components/dashboard/forms/post/post.component';
 import { ResponsesComponent } from './components/dashboard/components/responses/responses.component';
 import { OfferFullDetailsComponent } from './components/dashboard/components/offer-full-details/offer-full-details.component';
+import { HomeComponent } from './components/home/home.component';
 
 
 const routes: Routes = [
@@ -22,7 +23,8 @@ const routes: Routes = [
   { path: 'responses', component: ResponsesComponent },
   { path: 'offer-full-details', component: OfferFullDetailsComponent },
   { path: 'post', component: PostComponent },
-  
+  { path: 'home', component: HomeComponent},
+
 
   {
     path: 'dashboard', //parent route path
@@ -40,7 +42,7 @@ const routes: Routes = [
       //   path: 'post',
       //   component: PostComponent // another child route component that the router renders
       // },
-      
+
       {
         path: '',
         redirectTo: 'farmer',
