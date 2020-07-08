@@ -45,8 +45,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     SideNavComponent,
     ResponsesComponent,
     OfferFullDetailsComponent,
-  
-  ],
+    ],
   imports: [
     BrowserModule,
     HttpClientModule,
