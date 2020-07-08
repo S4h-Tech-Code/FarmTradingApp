@@ -25,6 +25,8 @@ import { SideNavComponent } from './common/side-nav/side-nav.component';
 import { ResponsesComponent } from './components/dashboard/components/responses/responses.component';
 import { OfferFullDetailsComponent } from './components/dashboard/components/offer-full-details/offer-full-details.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { HomeComponent } from './components/home/home.component';
+
 
 @NgModule({
   declarations: [
@@ -45,12 +47,13 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     SideNavComponent,
     ResponsesComponent,
     OfferFullDetailsComponent,
-    ],
-  imports: [
-    BrowserModule,
-    HttpClientModule,
-    AppRoutingModule,
+    HomeComponent
+  ],
+ imports: [
+  BrowserModule,
+   HttpClientModule,
     ReactiveFormsModule,
+    AppRoutingModule,
     FormsModule,
     Ng2SearchPipeModule,
     AuthModule,
