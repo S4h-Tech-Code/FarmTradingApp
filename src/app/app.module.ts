@@ -24,6 +24,7 @@ import { DashboardOverviewComponent } from './components/dashboard/components/da
 import { SideNavComponent } from './common/side-nav/side-nav.component';
 import { ResponsesComponent } from './components/dashboard/components/responses/responses.component';
 import { OfferFullDetailsComponent } from './components/dashboard/components/offer-full-details/offer-full-details.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
@@ -43,7 +44,8 @@ import { OfferFullDetailsComponent } from './components/dashboard/components/off
     DashboardOverviewComponent,
     SideNavComponent,
     ResponsesComponent,
-    OfferFullDetailsComponent
+    OfferFullDetailsComponent,
+  
   ],
   imports: [
     BrowserModule,
@@ -53,6 +55,7 @@ import { OfferFullDetailsComponent } from './components/dashboard/components/off
     FormsModule,
     Ng2SearchPipeModule,
     AuthModule,
+    BrowserAnimationsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

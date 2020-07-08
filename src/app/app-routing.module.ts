@@ -13,6 +13,7 @@ import { ResponsesComponent } from './components/dashboard/components/responses/
 import { OfferFullDetailsComponent } from './components/dashboard/components/offer-full-details/offer-full-details.component';
 
 
+
 const routes: Routes = [
   { path: 'forms', component: BootstarpFormsComponent },
   { path: 'products', component: ProductListComponent },
@@ -48,12 +49,12 @@ const routes: Routes = [
       }
     ]
   },
-  {
-    path: '',
-    redirectTo: '/products',
-    pathMatch: 'full'
-  },
-  { path: '**', component: ProductListComponent }
+  // {
+  //   path: '',
+  //   redirectTo: '/products',
+  //   pathMatch: 'full'
+  // },
+  // { path: '**', component: ProductListComponent }
 ];
 
 

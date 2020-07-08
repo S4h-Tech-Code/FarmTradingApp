@@ -23,12 +23,22 @@
     padding-right: 18px;
 }
 
+.col {
+    padding-left: 0rem;
+    padding-right: 0rem;
+}
+.rightPadding {
+    padding-right: 0.5rem;
+}
+.bgColor {
+    background-color: #eee;
+}
 
 @media(min-width:768px){
     .card {
         width: -webkit-fill-available;
-        margin-left: 120px;
-        margin-right: 120px;
+        margin-left: 20px;
+        margin-right: 10px;
     }
     .fsize {
         font-size: 1.25rem;
