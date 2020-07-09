@@ -12,6 +12,7 @@ import { PostComponent } from './components/dashboard/forms/post/post.component'
 import { ResponsesComponent } from './components/dashboard/components/responses/responses.component';
 import { OfferFullDetailsComponent } from './components/dashboard/components/offer-full-details/offer-full-details.component';
 import { HomeComponent } from './components/home/home.component';
+import { ResultsComponent } from './components/results/results.component';
 
 
 
@@ -25,6 +26,7 @@ const routes: Routes = [
   { path: 'offer-full-details', component: OfferFullDetailsComponent },
   { path: 'post', component: PostComponent },
   { path: 'home', component: HomeComponent},
+  { path: 'results', component: ResultsComponent},
 
 
   {

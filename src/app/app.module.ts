@@ -26,6 +26,7 @@ import { ResponsesComponent } from './components/dashboard/components/responses/
 import { OfferFullDetailsComponent } from './components/dashboard/components/offer-full-details/offer-full-details.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HomeComponent } from './components/home/home.component';
+import { ResultsComponent } from './components/results/results.component';
 
 
 
@@ -48,7 +49,8 @@ import { HomeComponent } from './components/home/home.component';
     SideNavComponent,
     ResponsesComponent,
     OfferFullDetailsComponent,
-    HomeComponent
+    HomeComponent,
+    ResultsComponent
   ],
  imports: [
   BrowserModule,
