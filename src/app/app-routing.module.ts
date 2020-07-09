@@ -15,6 +15,7 @@ import { HomeComponent } from './components/home/home.component';
 import { ResultsComponent } from './components/results/results.component';
 
 
+
 const routes: Routes = [
   { path: 'forms', component: BootstarpFormsComponent },
   { path: 'products', component: ProductListComponent },
@@ -52,12 +53,12 @@ const routes: Routes = [
       }
     ]
   },
-  {
-    path: '',
-    redirectTo: '/products',
-    pathMatch: 'full'
-  },
-  { path: '**', component: ProductListComponent }
+  // {
+  //   path: '',
+  //   redirectTo: '/products',
+  //   pathMatch: 'full'
+  // },
+  // { path: '**', component: ProductListComponent }
 ];
 
 

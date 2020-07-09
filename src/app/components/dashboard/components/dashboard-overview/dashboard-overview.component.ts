@@ -18,7 +18,7 @@ onClickMore(){
  this.remainingLots = !this.remainingLots;
 }
 onViewResponses(){
- this.router.navigateByUrl('../responses');
+ this.router.navigateByUrl('responses');
 }
 onPost(){
   this.router.navigateByUrl('../post');
